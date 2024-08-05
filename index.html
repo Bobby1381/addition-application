@@ -9,11 +9,24 @@
             font-size: 40px;
         }
         body{
-            background-color: rgb(126, 201, 201);
+            background: linear-gradient(red, blue);
+            height: 100vh;
+
+        }
+        input{
+            border-radius: 19px;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
         }
     </style>
 </head>
 <body>
+     <div class="container">
     <center>
         <h1>Addition of to number</h1>
         <form onsubmit="find()">
@@ -23,8 +36,9 @@
         <br><br>
         <input type="submit"  value="Add">
         </form>
+        
         <h2 id="msg"></h2>
-
+     </div>
         <script>
            function find(){
             event.preventDefault();
